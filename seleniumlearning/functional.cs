@@ -38,27 +38,30 @@ namespace seleniumlearning
             // to select by text
             //s.SelectByText("Teacher");
             // to select by value
-            s.SelectByValue("consult");  
+            s.SelectByValue("consult");
             // to select by index
             //s.SelectByIndex(0);
-            IList<IWebElement> rdos = driver.FindElements(By.CssSelector("input[type='radio']"));
-            //rdos[1].Click();   
+            
+
             // to be sure of what to click just in case the app was updated
-            foreach (IWebElement radioButton in rdos) 
+            foreach (IWebElement radioButton in rdos)
             {
                 if (radioButton.GetAttribute("value").Equals("user"))
                     radioButton.Click();
 
             }
+
             Thread.Sleep(4000);
             driver.FindElement(By.Id("okayBtn")).Click();
-           //Boolean result=driver.FindElement(By.Id("usertype")).Selected;
+            //Boolean result=driver.FindElement(By.Id("usertype")).Selected;
             //Assert.That(result, Is.True);   
 
 
 
 
         }
+        
+
 
 
     }

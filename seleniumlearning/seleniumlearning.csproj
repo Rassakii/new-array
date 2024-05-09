@@ -11,17 +11,23 @@
 
   <ItemGroup>
     <Compile Remove=".2etest.cs" />
+    <Compile Remove="Allertactionautosuggestive.cs" />
     <Compile Remove="functional.cs" />
     <Compile Remove="Locators.cs" />
+    <Compile Remove="newPractice.cs" />
     <Compile Remove="seleniumfirst.cs" />
+    <Compile Remove="sorttable.cs" />
     <Compile Remove="UnitTest1.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include=".2etest.cs" />
+    <None Include="Allertactionautosuggestive.cs" />
     <None Include="functional.cs" />
     <None Include="Locators.cs" />
+    <None Include="newPractice.cs" />
     <None Include="seleniumfirst.cs" />
+    <None Include="sorttable.cs" />
     <None Include="UnitTest1.cs" />
   </ItemGroup>
 

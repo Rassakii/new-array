@@ -50,9 +50,9 @@ namespace seleniumlearning
             //Thread.Sleep(3000);
             String errorMessage = driver.FindElement(By.ClassName("alert-danger")).Text;
             // explicit wait
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(8));
-            //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElement(driver.FindElement(By.Id("signInBtn")), "Sign In"));
-            //TestContext.Progress.WriteLine(errorMessage);
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElement(driver.FindElement(By.Id("signInBtn")), "Sign In"));
+            TestContext.Progress.WriteLine(errorMessage);
             // Find the web element with the link text "https://rahulshettyacademy.com/documents-request"
             IWebElement link = driver.FindElement(By.LinkText("Free Access to InterviewQues/ResumeAssistance/Material"));
 
